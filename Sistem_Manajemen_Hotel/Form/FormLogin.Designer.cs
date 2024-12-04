@@ -33,13 +33,13 @@
             this.groupBoxLogin = new System.Windows.Forms.GroupBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.txtPasswordLogin = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtUsernameLogin = new System.Windows.Forms.TextBox();
             this.lblUsernameLogin = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.label4 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBoxMinimize = new System.Windows.Forms.PictureBox();
             this.pictureboxClose = new System.Windows.Forms.PictureBox();
@@ -108,6 +108,20 @@
             this.txtPasswordLogin.Name = "txtPasswordLogin";
             this.txtPasswordLogin.Size = new System.Drawing.Size(261, 26);
             this.txtPasswordLogin.TabIndex = 2;
+            this.txtPasswordLogin.TextChanged += new System.EventHandler(this.txtPasswordLogin_TextChanged);
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.label4.Location = new System.Drawing.Point(170, 300);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(145, 19);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Forgot Password ?";
             // 
             // label3
             // 
@@ -164,19 +178,6 @@
             this.label2.Size = new System.Drawing.Size(92, 32);
             this.label2.TabIndex = 0;
             this.label2.Text = "HOTEL";
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.AutoSize = true;
-            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.label4.Location = new System.Drawing.Point(170, 300);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(145, 19);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Forgot Password ?";
             // 
             // pictureBox3
             // 

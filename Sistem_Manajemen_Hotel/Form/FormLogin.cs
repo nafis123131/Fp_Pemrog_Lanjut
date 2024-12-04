@@ -18,6 +18,7 @@ namespace Sistem_Manajemen_Hotel
         {
             InitializeComponent();
             db = new DbConnector();
+            
         }
         private void pictureboxClose_MouseHover(object sender, EventArgs e)
         {
@@ -51,7 +52,7 @@ namespace Sistem_Manajemen_Hotel
 
         private void pictureBoxShow_Click(object sender, EventArgs e)
         {
-             pictureBoxShow.Hide();
+            pictureBoxShow.Hide();
             txtPasswordLogin.UseSystemPasswordChar = false;
             pictureBoxHide.Show();
         }
@@ -72,13 +73,22 @@ namespace Sistem_Manajemen_Hotel
             {
                 if (check)
                 {
-                  
+                    FormDashboard fd = new FormDashboard();
+                    fd.Username = txtUsernameLogin.Text;
+                    txtUsernameLogin.Clear();
+                    txtPasswordLogin.Clear();
+                    fd.Show();
                 }
                 else
                 {
                     MessageBox.Show("Username atau Password Salah", "Username atau Password", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void txtPasswordLogin_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
