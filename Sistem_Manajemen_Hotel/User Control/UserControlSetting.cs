@@ -76,7 +76,7 @@ namespace Sistem_Manajemen_Hotel.User_Control
                     MessageBox.Show("Silahkan isi semua kolom !", "Require all field !", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 else
                 {
-                    DialogResult result = MessageBox.Show("Apakah amda ingin menghapus user ini?", "User telah dihapus!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    DialogResult result = MessageBox.Show("Apakah anda ingin menghapus user ini?", "User telah dihapus!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (DialogResult.Yes == result)
                     {
                         check = db.UpdateUser(ID, txtUsernameUpdateDelete.Text.Trim(), txtPasswordUpdateDelete.Text.Trim());

@@ -47,9 +47,9 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.userControlClient1 = new Sistem_Manajemen_Hotel.User_Control.UserControlClient();
             this.userControlSetting1 = new Sistem_Manajemen_Hotel.User_Control.UserControlSetting();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.userControlClient1 = new Sistem_Manajemen_Hotel.User_Control.UserControlClient();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -138,7 +138,7 @@
             this.btnRoom.Name = "btnRoom";
             this.btnRoom.Size = new System.Drawing.Size(288, 64);
             this.btnRoom.TabIndex = 3;
-            this.btnRoom.Text = "         Room";
+            this.btnRoom.Text = "         Ruang";
             this.btnRoom.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnRoom.UseVisualStyleBackColor = false;
             this.btnRoom.Click += new System.EventHandler(this.btnRoom_Click);
@@ -314,6 +314,18 @@
             this.panel5.Size = new System.Drawing.Size(1066, 486);
             this.panel5.TabIndex = 0;
             // 
+            // userControlClient1
+            // 
+            this.userControlClient1.BackColor = System.Drawing.Color.White;
+            this.userControlClient1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlClient1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userControlClient1.Location = new System.Drawing.Point(0, 0);
+            this.userControlClient1.Margin = new System.Windows.Forms.Padding(4);
+            this.userControlClient1.Name = "userControlClient1";
+            this.userControlClient1.Size = new System.Drawing.Size(1066, 486);
+            this.userControlClient1.TabIndex = 0;
+            this.userControlClient1.Visible = false;
+            // 
             // userControlSetting1
             // 
             this.userControlSetting1.BackColor = System.Drawing.Color.White;
@@ -328,17 +340,6 @@
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // userControlClient1
-            // 
-            this.userControlClient1.BackColor = System.Drawing.Color.White;
-            this.userControlClient1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControlClient1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userControlClient1.Location = new System.Drawing.Point(0, 0);
-            this.userControlClient1.Margin = new System.Windows.Forms.Padding(4);
-            this.userControlClient1.Name = "userControlClient1";
-            this.userControlClient1.Size = new System.Drawing.Size(1066, 486);
-            this.userControlClient1.TabIndex = 0;
             // 
             // FormDashboard
             // 

@@ -110,7 +110,7 @@ namespace Sistem_Manajemen_Hotel.User_Control
                     MessageBox.Show("Silahkan isi semua kolom !", "Require all field !", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 else
                 {
-                    DialogResult result = MessageBox.Show("Apakah amda ingin menghapus client ini?", "Client telah dihapus!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    DialogResult result = MessageBox.Show("Apakah anda ingin menghapus client ini?", "Client telah dihapus!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (DialogResult.Yes == result)
                     {
                         check = db.DeleteClient(ID);
@@ -126,6 +126,19 @@ namespace Sistem_Manajemen_Hotel.User_Control
         private void tabPageUpdateDeleteClient_Leave(object sender, EventArgs e)
         {
             Clear1();
+        }
+
+        private void dataGridViewCariClient_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex != -1)
+            {
+                DataGridViewRow row = dataGridViewCariClient.Rows[e.RowIndex];
+                ID = row.Cells[0].Value.ToString();
+                txtFirstNameUpdateDelete.Text = row.Cells[1].Value.ToString();
+                txtLastNameUpdateDelete.Text = row.Cells[2].Value.ToString();
+                txtPhoneUpdateDelete.Text = row.Cells[3].Value.ToString();
+                txtAddressUpdateDelete.Text = row.Cells[4].Value.ToString();
+            }
         }
     }
 }

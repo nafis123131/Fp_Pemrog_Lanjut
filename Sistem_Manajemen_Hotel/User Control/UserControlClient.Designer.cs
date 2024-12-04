@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControlClient = new System.Windows.Forms.TabControl();
             this.tabPageTambahClient = new System.Windows.Forms.TabPage();
             this.btnTambahClient = new System.Windows.Forms.Button();
@@ -273,6 +273,7 @@
             this.dataGridViewCariClient.ReadOnly = true;
             this.dataGridViewCariClient.Size = new System.Drawing.Size(967, 215);
             this.dataGridViewCariClient.TabIndex = 0;
+            this.dataGridViewCariClient.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewCariClient_CellClick);
             // 
             // Column1
             // 
@@ -311,8 +312,8 @@
             // 
             this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column5.DataPropertyName = "Client_Address";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column5.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle1;
             this.Column5.HeaderText = "Address";
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
