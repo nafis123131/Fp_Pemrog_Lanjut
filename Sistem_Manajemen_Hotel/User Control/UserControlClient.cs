@@ -140,5 +140,15 @@ namespace Sistem_Manajemen_Hotel.User_Control
                 txtAddressUpdateDelete.Text = row.Cells[4].Value.ToString();
             }
         }
+
+        private void tabPageTambahClient_Enter(object sender, EventArgs e)
+        {
+            db.DisplayAndSearch("SELECT * FROM Client_Table", dataGridViewCariClient);
+        }
+
+        private void tabControlClient_Leave(object sender, EventArgs e)
+        {
+            Clear1();
+        }
     }
 }

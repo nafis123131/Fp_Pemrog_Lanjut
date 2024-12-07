@@ -50,6 +50,8 @@ namespace Sistem_Manajemen_Hotel
             MovePanel(btnDashboard);
             userControlSetting1.Hide();
             userControlClient1.Hide();
+            userControlRoom1.Hide();
+            userControlReservasi1.Hide();
         }
 
         private void btnClient_Click(object sender, EventArgs e)
@@ -58,6 +60,8 @@ namespace Sistem_Manajemen_Hotel
             userControlSetting1.Hide();
             userControlClient1.Clear();
             userControlClient1.Show();
+            userControlRoom1.Hide();
+            userControlReservasi1.Hide();
         }
 
         private void btnRoom_Click(object sender, EventArgs e)
@@ -65,6 +69,9 @@ namespace Sistem_Manajemen_Hotel
             MovePanel(btnRoom);
             userControlSetting1.Hide();
             userControlClient1.Hide();
+            userControlRoom1.Clear();
+            userControlRoom1.Show();
+            userControlReservasi1.Hide();
         }
 
         private void btnReservasi_Click(object sender, EventArgs e)
@@ -72,6 +79,9 @@ namespace Sistem_Manajemen_Hotel
             MovePanel(btnReservasi);
             userControlSetting1.Hide();
             userControlClient1.Hide();
+            userControlRoom1.Hide();
+            userControlReservasi1.Clear();
+            userControlReservasi1.Show();
         }
 
         private void btnSetting_Click(object sender, EventArgs e)
@@ -80,7 +90,9 @@ namespace Sistem_Manajemen_Hotel
             userControlSetting1.Clear();
             userControlSetting1.Show();
             userControlSetting1.Hide();
-            userControlClient1.Hide();
+            userControlClient1.Hide(); 
+            userControlRoom1.Hide();
+            userControlReservasi1.Hide();
         }
     }
 }

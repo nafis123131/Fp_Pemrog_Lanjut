@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControlClient = new System.Windows.Forms.TabControl();
             this.tabPageTambahClient = new System.Windows.Forms.TabPage();
             this.btnTambahClient = new System.Windows.Forms.Button();
@@ -81,6 +81,7 @@
             this.tabControlClient.SelectedIndex = 0;
             this.tabControlClient.Size = new System.Drawing.Size(1042, 406);
             this.tabControlClient.TabIndex = 0;
+            this.tabControlClient.Leave += new System.EventHandler(this.tabControlClient_Leave);
             // 
             // tabPageTambahClient
             // 
@@ -101,6 +102,7 @@
             this.tabPageTambahClient.TabIndex = 0;
             this.tabPageTambahClient.Text = "Tambah Client";
             this.tabPageTambahClient.UseVisualStyleBackColor = true;
+            this.tabPageTambahClient.Enter += new System.EventHandler(this.tabPageTambahClient_Enter);
             this.tabPageTambahClient.Leave += new System.EventHandler(this.tabPageTambahClient_Leave);
             // 
             // btnTambahClient
@@ -260,6 +262,7 @@
             // 
             this.dataGridViewCariClient.AllowUserToAddRows = false;
             this.dataGridViewCariClient.AllowUserToDeleteRows = false;
+            this.dataGridViewCariClient.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataGridViewCariClient.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewCariClient.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewCariClient.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -312,8 +315,8 @@
             // 
             this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column5.DataPropertyName = "Client_Address";
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column5.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle4;
             this.Column5.HeaderText = "Address";
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
@@ -351,7 +354,7 @@
             this.btnDeleteUpdate.Location = new System.Drawing.Point(296, 315);
             this.btnDeleteUpdate.Name = "btnDeleteUpdate";
             this.btnDeleteUpdate.Size = new System.Drawing.Size(126, 40);
-            this.btnDeleteUpdate.TabIndex = 6;
+            this.btnDeleteUpdate.TabIndex = 14;
             this.btnDeleteUpdate.Text = "Delete";
             this.btnDeleteUpdate.UseVisualStyleBackColor = false;
             this.btnDeleteUpdate.Click += new System.EventHandler(this.btnDeleteUpdate_Click);
@@ -367,7 +370,7 @@
             this.btnUpdateDelete.Location = new System.Drawing.Point(153, 315);
             this.btnUpdateDelete.Name = "btnUpdateDelete";
             this.btnUpdateDelete.Size = new System.Drawing.Size(126, 40);
-            this.btnUpdateDelete.TabIndex = 5;
+            this.btnUpdateDelete.TabIndex = 14;
             this.btnUpdateDelete.Text = "Update";
             this.btnUpdateDelete.UseVisualStyleBackColor = false;
             this.btnUpdateDelete.Click += new System.EventHandler(this.btnUpdateDelete_Click);

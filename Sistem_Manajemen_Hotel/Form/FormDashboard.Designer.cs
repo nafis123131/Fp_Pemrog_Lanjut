@@ -47,9 +47,11 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.userControlRoom1 = new Sistem_Manajemen_Hotel.User_Control.UserControlRoom();
             this.userControlClient1 = new Sistem_Manajemen_Hotel.User_Control.UserControlClient();
             this.userControlSetting1 = new Sistem_Manajemen_Hotel.User_Control.UserControlSetting();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.userControlReservasi1 = new Sistem_Manajemen_Hotel.User_Control.UserControlReservasi();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -306,6 +308,8 @@
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.userControlReservasi1);
+            this.panel5.Controls.Add(this.userControlRoom1);
             this.panel5.Controls.Add(this.userControlClient1);
             this.panel5.Controls.Add(this.userControlSetting1);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -313,6 +317,17 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1066, 486);
             this.panel5.TabIndex = 0;
+            // 
+            // userControlRoom1
+            // 
+            this.userControlRoom1.BackColor = System.Drawing.Color.White;
+            this.userControlRoom1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlRoom1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userControlRoom1.Location = new System.Drawing.Point(0, 0);
+            this.userControlRoom1.Margin = new System.Windows.Forms.Padding(4);
+            this.userControlRoom1.Name = "userControlRoom1";
+            this.userControlRoom1.Size = new System.Drawing.Size(1066, 486);
+            this.userControlRoom1.TabIndex = 1;
             // 
             // userControlClient1
             // 
@@ -340,6 +355,17 @@
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // userControlReservasi1
+            // 
+            this.userControlReservasi1.BackColor = System.Drawing.Color.White;
+            this.userControlReservasi1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlReservasi1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userControlReservasi1.Location = new System.Drawing.Point(0, 0);
+            this.userControlReservasi1.Name = "userControlReservasi1";
+            this.userControlReservasi1.Size = new System.Drawing.Size(1066, 486);
+            this.userControlReservasi1.TabIndex = 2;
+            this.userControlReservasi1.Visible = false;
             // 
             // FormDashboard
             // 
@@ -395,5 +421,7 @@
         private System.Windows.Forms.Timer timer1;
         private User_Control.UserControlSetting userControlSetting1;
         private User_Control.UserControlClient userControlClient1;
+        private User_Control.UserControlRoom userControlRoom1;
+        private User_Control.UserControlReservasi userControlReservasi1;
     }
 }
