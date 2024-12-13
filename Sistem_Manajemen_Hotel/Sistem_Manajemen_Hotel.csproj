@@ -70,6 +70,12 @@
     <Compile Include="User Control\UserControlClient.Designer.cs">
       <DependentUpon>UserControlClient.cs</DependentUpon>
     </Compile>
+    <Compile Include="User Control\UserControlDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UserControlDashboard.Designer.cs">
+      <DependentUpon>UserControlDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="User Control\UserControlReservasi.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -106,6 +112,9 @@
     </Compile>
     <EmbeddedResource Include="User Control\UserControlClient.resx">
       <DependentUpon>UserControlClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UserControlDashboard.resx">
+      <DependentUpon>UserControlDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UserControlReservasi.resx">
       <DependentUpon>UserControlReservasi.cs</DependentUpon>
@@ -171,6 +180,18 @@
   <ItemGroup>
     <Folder Include="Model\Entity\" />
     <Folder Include="Model\Repository\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vector1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 21.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
